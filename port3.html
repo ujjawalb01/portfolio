@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjawal Sharma - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: rgb(1, 1, 24);
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        header::after {
+            content: "";
+            background: url('https://www.transparenttextures.com/patterns/cubes.png');
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: 700;
+            position: relative;
+            z-index: 2;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        nav {
+            background-color: #0e0d13;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 25px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            transform: scale(1.1);
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 6px 0;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #f0f0f0;
+        }
+
+        .profile-photo {
+            text-align: center;
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+
+        .profile-photo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+
+        .skills {
+            background-color: #222;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .skills h2 {
+            color: #fff;
+            margin-bottom: 40px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills ul li {
+            background: #333;
+            margin: 15px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 200px;
+            max-width: 200px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skills ul li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .skills ul li img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .skills ul li:hover img {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        .skills ul li p {
+            margin: 0;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #fff;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ujjawal Sharma</h1>
+            <p>Front-End Web Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/ujjawalb01">Github</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="container">
+        <div class="profile-photo">
+            <img class="p1" src="nm2.png" alt="">
+        </div>
+        <h2>About Me</h2>
+        <p>Hello! I am Ujjawal Sharma, a passionate Front-End Web Developer with expertise in creating interactive and responsive web applications. I have a strong foundation in programming languages like C, C++, Java, and Python.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/html/html.png" alt="HTML">
+                    <p>HTML</p>
+                </li>
+                <li>
+                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/css/css.png" alt="CSS">
+                    <p>CSS</p>
+                </li>
+                <li>
+                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </li>
+                <li>
+                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" alt="React">
+                    <p>React</p>
+                </li>
+                <li>
+                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/c/c.png" alt="C">
+                    <p>C</p>
+                </li>
+                <li>
+                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/cpp/cpp.png" alt="C++">
+                    <p>C++</p>
+                </li>
+                <li>
+                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/java/java.png" alt="Java">
+                    <p>Java</p>
+                </li>
+                <li>
+                    <img src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png" alt="Python">
+                    <p>Python</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, please feel free to reach out to me at:</p>
+        <p>Email: ujjawalshaarma507@gmail.com</p>
+        <p>Mob.: 9720554018</p>
+    
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ujjawal Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
